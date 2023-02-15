@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="13"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
         android:orientation="horizontal">
 
         <Button
@@ -33,14 +33,9 @@
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10"
-        android:orientation="horizontal">
+        style="@style/settings_layout_style">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            style="@style/settings_text_style"
             android:layout_weight="6"
             android:text="@string/dark"
             android:textAppearance="@style/settings_style" />
@@ -51,91 +46,62 @@
             android:layout_height="wrap_content"
             android:layout_weight="50"
             android:background="?android:attr/selectableItemBackground"
-/>
+            />
 
 
 
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10"
-        android:orientation="horizontal">
+        style="@style/settings_layout_style">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            style="@style/settings_text_style"
             android:layout_weight="6"
             android:text="@string/share"
             android:textAppearance="@style/settings_style" />
 
         <Button
             android:id="@+id/button_settings_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/settings_button_style"
             android:layout_weight="50"
-            android:background="?android:attr/selectableItemBackground"
-            app:icon="@drawable/share"
-            app:iconGravity="start"
-            app:iconTint="@color/gray"/>
+            app:icon="@drawable/light_mode"
+            />
 
 
 
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10"
-        android:orientation="horizontal">
+        style="@style/settings_layout_style">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            style="@style/settings_text_style"
             android:layout_weight="6"
             android:text="@string/support"
             android:textAppearance="@style/settings_style" />
 
         <Button
             android:id="@+id/button_settings_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/settings_button_style"
             android:layout_weight="50"
-            android:background="?android:attr/selectableItemBackground"
-            app:icon="@drawable/support"
-            app:iconGravity="start"
-            app:iconTint="@color/gray" />
+            app:icon="@drawable/supp" />
 
 
 
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10"
-        android:layout_marginBottom="400dp"
-        android:orientation="horizontal">
+        style="@style/settings_layout_style">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            style="@style/settings_text_style"
             android:layout_weight="6"
             android:text="@string/rules"
             android:textAppearance="@style/settings_style" />
 
         <Button
             android:id="@+id/button_settings_5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/settings_button_style"
             android:layout_weight="50"
-            android:background="?android:attr/selectableItemBackground"
-            app:icon="@drawable/arrow"
-            app:iconGravity="start"
-            app:iconTint="@color/gray"/>
-
-
+            app:icon="@drawable/arrow3"/>
 
 
     </LinearLayout>

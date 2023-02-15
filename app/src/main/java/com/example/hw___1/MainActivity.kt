@@ -14,24 +14,26 @@ class MainActivity : AppCompatActivity() {
 
         val button1 = findViewById<Button>(R.id.button1)
 
-        button1.setOnClickListener {
-            val intent = Intent(this, Search::class.java)
+        fun navigeteTo(clazz: Class<out AppCompatActivity>) {
+            val intent = Intent(this, clazz)
             startActivity(intent)
+        }
+
+        button1.setOnClickListener {
+            navigeteTo(Search::class.java)
         }
 
 
         val button2 = findViewById<Button>(R.id.button2)
 
         button2.setOnClickListener {
-            val intent = Intent(this, Media::class.java)
-            startActivity(intent)
+            navigeteTo(Media::class.java)
         }
 
         val button3 = findViewById<Button>(R.id.button3)
 
         button3.setOnClickListener {
-            val intent = Intent(this, SettingsActivity::class.java)
-            startActivity(intent)
+            navigeteTo(SettingsActivity::class.java)
         }
     }
 }
