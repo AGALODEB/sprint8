@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/some_id"
+    style="@style/background_main"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -24,6 +24,7 @@
         android:layout_marginBottom="13dp"
         android:layout_weight="100"
         android:text="@string/button1"
+
         app:icon="@drawable/search" />
 
     <Button
